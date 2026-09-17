@@ -1,5 +1,7 @@
 # Deploying a Virtual Cluster using VirtualBox (OpenHPC + SLURM)
 
+Used to set up a small 3-node cluster of VMs for testing purposes. Adapted from OpenHPC's documentation.
+
 Following the protocol provided in this guide:
 https://github.com/openhpc/ohpc/releases/download/v3.4.GA/openhpc_3.4-install_guide-rocky9-warewulf-slurm-x86_64.pdf
 
