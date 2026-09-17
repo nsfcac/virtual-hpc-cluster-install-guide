@@ -1,4 +1,4 @@
-# Deploying a Virtual Cluster using VirtualBox (OpenHPC + SLURM)
+# Deploying a Virtual HPC Cluster using VirtualBox (OpenHPC + SLURM)
 
 Used to set up a small 3-node cluster of VMs for testing purposes. Adapted from OpenHPC's documentation.
 
@@ -71,9 +71,10 @@ https://github.com/openhpc/ohpc/releases/download/v3.4.GA/openhpc_3.4-install_gu
     - [NAT] Internet-accessible Ethernet Interface: `enp0s3`
         - Static IP: `10.x.x.x`
         - MAC Address: `XX:XX:XX:XX:XX:XX`
-    - [Host-Only] Data Center Network Ethernet Interface (& VM Connection): `enp0s8`
+    - [Host-Only] Data Center Network Ethernet Interface (& VM SSH Connection): `enp0s8`
         - Static IP: `192.168.x.x`
         - MAC Address: `XX:XX:XX:XX:XX:XX`
+        - **NOTE: Use this IP to SSH to the master node from your local machine using MobaXTerm or something similar.**
     - [Internal] Cluster Backend Proivisioner and Manager Ethernet Interface: `enp0s9`
         - This will be configured in the upcoming steps! No worries if you do not see anything here yet.
         - Static IP: `10.0.0.1/24`
